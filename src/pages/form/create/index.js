@@ -135,7 +135,8 @@ const Form = post => {
     <Grid container spacing={15}>
       <Grid item xs={12}>
         <Card>
-          <CardHeader title='Edit Post' />
+          {!postId && <CardHeader title='New Post' />}
+          {postId && <CardHeader title='Edit Post' />}
           <CardContent>
             <form onSubmit={e => e.preventDefault()}>
               <Grid container spacing={5}>
