@@ -12,7 +12,7 @@ const navigation = () => {
     },
     {
       title: 'Create Draft',
-      path: '/form',
+      path: '/form/create',
       icon: 'tabler:plus'
     }
   ]
